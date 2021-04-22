@@ -29,7 +29,7 @@ public:
 	friend ostream& operator << (ostream &os, const Fraction c)
 	{
 		assert(c.denominator != 0);
-		if (c.numerator % c.denominator == 0) os << c.numerator << endl;
+		if (c.numerator % c.denominator == 0) os << c.numerator / c.denominator << endl;
 		else os << abs(c.numerator * c.denominator) / abs(c.denominator) << " / " << c.numerator * c.denominator / abs(c.numerator) << endl;
 		return os;
 	}
